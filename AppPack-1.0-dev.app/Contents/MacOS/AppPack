@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/../.."
 
-./Portable/AppPack-1.0/AppPack.sh "${@:-}"
+. "./Contents/Portable/AppPack-1.0/AppPack.sh"
+
+AppPack "${@:-}"

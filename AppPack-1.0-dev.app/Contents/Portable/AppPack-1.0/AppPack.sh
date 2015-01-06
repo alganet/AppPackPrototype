@@ -8,9 +8,11 @@ AppPack ()
 
 	if which which >/dev/null 2>&1
 	then
-		(which automator >/dev/null 2>&1 &&
-			( automator -i "./Contents/Portable/AppPack-1.0/AppPack.html" AppPack.wflow & ) &&
-			return ) || :
+		if which automator >/dev/null 2>&1
+		then
+			automator -i "./Contents/Portable/AppPack-1.0/AppPack.html" "./Contents/MacOS/AppPack.wflow" &
+			return
+		fi
 
 		(which open >/dev/null 2>&1 &&
 			( open "./Contents/Portable/AppPack-1.0/AppPack.html" & ) &&
