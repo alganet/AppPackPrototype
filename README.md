@@ -21,9 +21,9 @@ Checking if multi-platform works:
 
   1. Clone the repo
   2. Click the clickable icon
-  	2a. AppPack-1.0-dev.lnk should be clickable on Windows.
-  	2b. AppPack-1.0-dev.desktop should be clickable on Linux.
-  	2c. AppPack-1.0-dev.app folder should be clickable on OS X 10.6 or higher.
+  	- AppPack-1.0-dev.lnk should be clickable on Windows.
+  	- AppPack-1.0-dev.desktop should be clickable on Linux.
+  	- AppPack-1.0-dev.app folder should be clickable on OS X 10.6 or higher.
   3. You should see a "Hello" displayed in HTML as a standalone app.
 
 Troubleshooting:
