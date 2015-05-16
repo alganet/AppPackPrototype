@@ -17,12 +17,26 @@ Not yet.
 For Developers
 --------------
 
+Checking if multi-platform works:
+
   1. Clone the repo
   2. Click the clickable icon
   	2a. AppPack-1.0-dev.lnk should be clickable on Windows.
   	2b. AppPack-1.0-dev.desktop should be clickable on Linux.
   	2c. AppPack-1.0-dev.app folder should be clickable on OS X 10.6 or higher.
   3. You should see a "Hello" displayed in HTML as a standalone app.
+
+Troubleshooting:
+
+  1. /Contents/MacOS/AppPack must be executable
+  2. /.AppPack.sh must be executable
+  3. /AppPack-1.0-dev.desktop must be executable
+  4. When changing versions, change them on:
+    1. The .app folder
+    2. The .desktop and .lnk shortcuts
+    3. The .AppPack.ini file
+  5. Window may be small on Linux (the size of the Hello world, or your app)
+  6. Currently, only works on Linux which has Firefox (though Chromium can and will be supported).
 
 Structure Description:
 
