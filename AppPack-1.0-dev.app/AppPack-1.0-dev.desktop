@@ -1,0 +1,6 @@
+[Desktop Entry]
+	Name=AppPack
+	Icon=applications-internet
+	Exec=sh -c "$(dirname "%k")/.AppPack.sh || sleep 2"
+	Terminal=false
+	Type=Application

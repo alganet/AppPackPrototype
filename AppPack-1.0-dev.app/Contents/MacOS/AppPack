@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+cd "$(dirname "$0")"
+
+automator -i "../Portable/AppPack-1.0/AppPack.html" AppPack.wflow
