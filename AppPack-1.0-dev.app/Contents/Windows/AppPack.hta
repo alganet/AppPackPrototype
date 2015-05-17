@@ -19,12 +19,20 @@
   applicationname=AppPack />
 <style>
 body, html, iframe {
+  width: 100%;
+  height: 100%;
   border: 0; margin: 0; padding: 0;
+  overflow: hidden;
+  display: block;
 }
 </style>
 <iframe
   id="container"
   src="../Portable/AppPack-1.0/AppPack.html"
   application=yes
-  frameBorder=0>
+  frameBorder=0
+  scrolling=no>
 </iframe>
+<script>
+  window.resizeTo(480, 320);
+</script>
