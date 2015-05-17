@@ -60,3 +60,4 @@ Structure Description:
   	  /AppPack-1.0-dev.desktop # 18. Executable launcher for FreeDesktop Linux
   	  /AppPack-1.0-dev.lnk     # 19. Launcher for Windowzes
 
+![yet to be a Mosai unusual project](https://avatars0.githubusercontent.com/u/5083441?v=3&s=48)
