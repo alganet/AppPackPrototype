@@ -7,6 +7,7 @@
     <key>CFBundleName</key>                  <string>AppPack</string>
     <key>CFBundleExecutable</key>            <string>AppPack</string>
     <key>CFBundleIdentifier</key>            <string>AppPack</string>
+    <key>CFBundleIconFile</key>              <string>AppPack</string>
     <key>CFBundleVersion</key>               <string>1.0</string>
     <key>CFBundleGetInfoString</key>         <string>1.0</string>
     <key>CFBundleShortVersionString</key>    <string>1.0</string>
