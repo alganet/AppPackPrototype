@@ -54,10 +54,9 @@ Structure Description:
       	/Windows               # 12. Specific Windows Folder
       	  /AppPack.hta         # 13. Windows Native HyperText HTML Application
       	Info.plist             # 14. Required OS X Bundle Information
-  	  /.AppPack.bat            # 15. Hidden main for Windows
-  	  /.AppPack.ini            # 16. Specifies which portable folder will open
-  	  /.AppPack.sh             # 17. Hidden executable main for Unixzes
-  	  /AppPack-1.0-dev.desktop # 18. Executable launcher for FreeDesktop Linux
-  	  /AppPack-1.0-dev.lnk     # 19. Launcher for Windowzes
+  	  /.AppPack.ini            # 15. Specifies which portable folder will open
+  	  /.AppPack.sh             # 16. Hidden executable main for Unixzes
+  	  /AppPack-1.0-dev.desktop # 17. Executable launcher for FreeDesktop Linux
+  	  /AppPack-1.0-dev.lnk     # 18. Launcher for Windowzes
 
 ![yet to be a Mosai unusual project](https://avatars0.githubusercontent.com/u/5083441?v=3&s=48)
