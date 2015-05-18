@@ -10,7 +10,8 @@ MessageName ()
 	long="${short#*-}" # First argument without trailing --
 
 	# Exit and warn if no first argument is found
-	if [ -z "$arg" ]; then
+	if [ -z "$arg" ]
+	then
 		"${namespace}_EmptyCall" # Call empty call placeholder
 		return 1
 	fi
@@ -18,11 +19,13 @@ MessageName ()
 	shift 2 # Remove namespace and first argument from $@
 
 	# Detects if a command, --long or -short option was called
-	if [ "$arg" = "--$long" ];then
+	if [ "$arg" = "--$long" ]
+	then
 		longname="${long%%=*}" # Long argument before the first = sign
 
 		# Detects if the --long=option has = sign
-		if [ "$long" != "$longname" ]; then
+		if [ "$long" != "$longname" ]
+		then
 			longval="${long#*=}"
 			long="$longname"
 			set -- "$longval" "${@:-}"
@@ -31,7 +34,8 @@ MessageName ()
 		main_call=${namespace}_Option_${long}
 
 
-	elif [ "$arg" = "-$short" ];then
+	elif [ "$arg" = "-$short" ]
+	then
 		main_call=${namespace}_Option_${short}
 	else
 		main_call=${namespace}_Command_${long}
@@ -39,7 +43,8 @@ MessageName ()
 
 	$main_call "${@:-}" && dispatch_returned=$? || dispatch_returned=$?
 
-	if [ $dispatch_returned = 127 ]; then
+	if [ $dispatch_returned = 127 ]
+	then
 		"${namespace}_MissingCall" "$namespace" "$arg" # Empty placeholder
 		return 1
 	fi

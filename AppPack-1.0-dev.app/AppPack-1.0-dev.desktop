@@ -1,6 +1,6 @@
 [Desktop Entry]
 	Name=AppPack
-	Icon=applications-internet
+	Icon=/n/Projects/Mosai/AppPack/AppPack-1.0-dev.app/Contents/Resources/AppPack.ico
 	Exec=sh -c "$(dirname "%k")/.AppPack.sh || sleep 2"
 	Terminal=false
 	Type=Application

@@ -27,13 +27,14 @@ body, html, iframe {
   display: block;
 }
 </style>
-<iframe
-  id="container"
-  src="../Portable/AppPack-1.0/AppPack.html"
-  application=yes
-  frameBorder=0
-  scrolling=no>
-</iframe>
 <script>
-  window.resizeTo(480, 320);
+  window.onload = function () {
+    window.resizeTo(480, 320);
+    var frameContainer = document.createElement('iframe');
+    frameContainer.frameBorder = 0;
+    frameContainer.scrolling = 'no';
+    frameContainer.src = App.commandLine.split(" ")[1];
+    frameContainer.setAttribute('application', 'yes');
+    document.getElementsByTagName("body")[0].appendChild(frameContainer);
+  }
 </script>

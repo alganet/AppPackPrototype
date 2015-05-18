@@ -1,0 +1,7 @@
+<job id=AppPack>
+	<script language=JScript src="..\Portable\AppPack\AppPack.js"></script>
+	<script language=JScript>
+		var app = new AppPack();
+		app[WScript.Arguments(0)]();
+	</script>
+</job>
