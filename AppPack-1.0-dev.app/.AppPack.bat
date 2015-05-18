@@ -2,6 +2,8 @@
 
 set AppHtml=./Contents/Portable/AppPack-1.0/AppPack.html
 
+cscript /nologo ".\Contents\Windows\SetIcon.js"
+
 if exist "%ProgramFiles%\Mozilla Firefox\firefox.exe" (
 	start "" "%ProgramFiles%\Mozilla Firefox\firefox.exe" -chrome %AppHtml%
 ) else if exist "%ProgramFiles(x86)%\Mozilla Firefox\firefox.exe" (
