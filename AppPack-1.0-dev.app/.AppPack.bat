@@ -1,7 +1,7 @@
 @echo off
 
+cscript /nologo ".\Contents\Windows\ZoneUnlock.js"
 set AppHtml=./Contents/Portable/AppPack-1.0/AppPack.html
-
 cscript /nologo ".\Contents\Windows\SetIcon.js"
 
 if exist "%ProgramFiles%\Mozilla Firefox\firefox.exe" (
