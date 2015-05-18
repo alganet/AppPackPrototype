@@ -9,9 +9,11 @@ AppPack ()
 	sed -e "s,Icon=.*,Icon=${PWD}/Contents/Resources/AppPack.ico,g" "${DesktopIni}.bak" > "${DesktopIni}" || :
 	chmod a+x "${DesktopIni}"
 
-	(firefox --help >/dev/null 2>&1 &&
-		( firefox -chrome "./Contents/Portable/AppPack/AppPack.html" & ) &&
-		return ) || :
+	if firefox --help >/dev/null 2>&1
+	then
+		firefox -chrome "./Contents/Portable/AppPack/AppPack.html" &
+		return
+	fi
 
 	if which which >/dev/null 2>&1
 	then
@@ -21,18 +23,22 @@ AppPack ()
 			return
 		fi
 
-		(which open >/dev/null 2>&1 &&
-			( open "./Contents/Portable/AppPack/AppPack.html" & ) &&
-			return ) || :
+		if which open >/dev/null 2>&1
+		then
+			open "./Contents/Portable/AppPack/AppPack.html" &
+			return
+		fi
 
-		(which mshta >/dev/null 2>&1 &&
-			( start "" "$(find -name '*.lnk' | head -n 1)" ) &&
-			return ) || :
+		if which mshta >/dev/null 2>&1
+		then
+			start "" "$(find -name '*.lnk' | head -n 1)"
+			return
+		fi
 	fi
 
-	(xdg-open --help >/dev/null 2>&1 &&
-		( xdg-open "./Contents/Portable/AppPack/AppPack.html" & ) &&
-		return ) || :
-
-	sleep 1
+	if xdg-open --help >/dev/null 2>&1
+	then
+		xdg-open "./Contents/Portable/AppPack/AppPack.html" &
+		return
+	fi
 }
