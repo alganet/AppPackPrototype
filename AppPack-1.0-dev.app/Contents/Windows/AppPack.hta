@@ -30,11 +30,11 @@ body, html, iframe {
 <script>
   window.onload = function () {
     window.resizeTo(480, 320);
-    var frameContainer = document.createElement('iframe');
-    frameContainer.frameBorder = 0;
-    frameContainer.scrolling = 'no';
-    frameContainer.src = App.commandLine.split(" ")[1];
-    frameContainer.setAttribute('application', 'yes');
-    document.getElementsByTagName("body")[0].appendChild(frameContainer);
+    var AppPackContainer = document.createElement('iframe');
+    AppPackContainer.frameBorder = 0;
+    AppPackContainer.scrolling = 'no';
+    AppPackContainer.src = App.commandLine.split(" ")[1];
+    AppPackContainer.setAttribute('application', 'yes');
+    document.getElementsByTagName("body")[0].appendChild(AppPackContainer);
   }
 </script>

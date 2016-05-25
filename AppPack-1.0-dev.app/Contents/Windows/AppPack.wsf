@@ -1,4 +1,4 @@
-<job id=AppPack>
+<job id=AppPackJob>
 	<script language=JScript src="..\Portable\AppPack\AppPack.js"></script>
 	<script language=JScript>
 		var app = new AppPack();
